@@ -6,6 +6,12 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# What is a word
+
+autoload -U select-word-style && select-word-style bash
+WORDCHARS=${WORDCHARS//-}
+WORDCHARS=${WORDCHARS//.}
+
 # Theme and Prompt
 
 autoload -U promptinit
