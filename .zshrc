@@ -40,3 +40,7 @@ source ~/.zsh/zsh-tab-title/zsh-tab-title.plugin.zsh
 
 # Terraform
 export PATH="/usr/local/opt/terraform@1.0/bin:$PATH"
+
+# Prompt set up
+SPACESHIP_KUBECTL_SHOW=true
+SPACESHIP_KUBECTL_VERSION_SHOW=false
